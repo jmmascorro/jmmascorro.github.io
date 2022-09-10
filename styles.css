@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+.output_squares {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+table {
+  border-spacing: 5px 5px;
+}
+
+td {
+  border: 2px solid #a8a7a7;
+  width: 55px;
+  height: 45px;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  background-color: #6b6a6a;
+}
+
+.row_one {
+  text-align: center;
+  font-size: 25px;
+}
+
+.row_two {
+  text-align: center;
+  font-size: 25px;
+}
+
+.row_three {
+  text-align: center;
+  font-size: 25px;
+}
+
+.row_four {
+  text-align: center;
+  font-size: 25px;
+}
+
+.row_five {
+  text-align: center;
+  font-size: 25px;
+}
+
+.letter {
+  width: 35px;
+  height: 58px;
+  background-color: #626161;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  border-radius: 8px;
+  border: 2px solid white;
+  font-size: 18px;
+}
+
+.input_buttons {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "q w e rbtn t ybtn u i o p" "a s d f g h j k l" "entr entr z xbtn c v b n m bck";
+  gap: 10px;
+}
+
+.enter {
+  grid-area: entr;
+  width: 54px;
+  height: 58px;
+  border-radius: 8px;
+  background-color: #3a3939;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  border: 2px solid white;
+  font-size: 14px;
+}
+
+.backspace {
+  grid-area: bck;
+  width: 54px;
+  height: 58px;
+  border-radius: 8px;
+  background-color: #3a3939;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input_btns_row_two {
+  padding-left: 20px;
+}
+
+#q {
+  grid-area: q;
+}
+
+#w {
+  grid-area: w;
+}
+
+#e {
+  grid-area: e;
+}
+
+#r {
+  grid-area: rbtn;
+}
+
+#t {
+  grid-area: t;
+}
+
+#y {
+  grid-area: ybtn;
+}
+
+#u {
+  grid-area: u;
+}
+
+#i {
+  grid-area: i;
+}
+
+#o {
+  grid-area: o;
+}
+
+#p {
+  grid-area: p;
+}
+
+#a {
+  grid-area: a;
+}
+
+#s {
+  grid-area: s;
+}
+
+#d {
+  grid-area: d;
+}
+
+#f {
+  grid-area: f;
+}
+
+#g {
+  grid-area: g;
+}
+
+#h {
+  grid-area: h;
+}
+
+#j {
+  grid-area: j;
+}
+
+#k {
+  grid-area: k;
+}
+
+#l {
+  grid-area: l;
+}
+
+#z {
+  grid-area: z;
+}
+
+#x {
+  grid-area: xbtn;
+}
+
+#c {
+  grid-area: c;
+}
+
+#v {
+  grid-area: v;
+}
+
+#b {
+  grid-area: b;
+}
+
+#n {
+  grid-area: n;
+}
+
+#m {
+  grid-area: m;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bree Serif", "sans-serif";
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+}
+
+.card {
+  border: 2px solid white;
+  height: 50vh;
+  background-color: #3a3939;
+  padding: 10px;
+}
+.card h2 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  margin-bottom: 5px;
+}
+.card p {
+  text-align: center;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  font-size: 15px;
+}
+.card .close_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.card .close_button {
+  height: 50px;
+  width: 120px;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  background-color: #626161;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(./images/game-background.jpg);
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.p_winner {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.start_new {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.new_game {
+  width: 120px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #3a3939;
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000;
+  border: 2px solid white;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: 35vw;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .card p {
+    font-size: 16px;
+  }
+
+  button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em !important;
+    transform: translateY(-0.25em) !important;
+    cursor: pointer;
+  }
+
+  .letter {
+    width: 35px;
+    height: 54px;
+  }
+
+  .enter {
+    width: 54px;
+    height: 54px;
+  }
+
+  .backspace {
+    width: 54px;
+    height: 54px;
+  }
+}

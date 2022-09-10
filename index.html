@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<header>
+    <h1>Four-Letter-Wordle</h1>
+</header>
+<div class="card">
+    <div class="container">
+        <h2>Welcome to Four-Letter-Wordle</h2>
+        <p>A random four letter word is being generated for you to guess.</p>
+        <p>When you guess your word the following will happen:</p>
+        <p>If a letter is in the word and in the correct place, it will get marked <span style="color:rgb(24, 199, 24)">green.</span></p>
+        <p>If a letter is in the word but in the wrong place, it will get marked <span style="color:#FFAC1C">orange.</span></p>
+        <p>And if a letter is not in the word at all, it will get marked <span style="color:#EF0107">red.</span></p>
+        <p>You have five chances to guess the word.</p>
+        <div class="close_div">
+        <button class="close_button">Press to Play</button>
+        </div>
+    </div>
+</div>
+<body>
+    <div class="output_squares">
+        <table>
+            <tr>
+                <td class="row_one"></td>
+                <td class="row_one"></td>
+                <td class="row_one"></td>
+                <td class="row_one"></td>
+            </tr>
+            <tr>
+                <td class="row_two"></td>
+                <td class="row_two"></td>
+                <td class="row_two"></td>
+                <td class="row_two"></td>
+            </tr>
+            <tr>
+                <td class="row_three"></td>
+                <td class="row_three"></td>
+                <td class="row_three"></td>
+                <td class="row_three"></td>
+            </tr>
+            <tr>
+                <td class="row_four"></td>
+                <td class="row_four"></td>
+                <td class="row_four"></td>
+                <td class="row_four"></td>
+            </tr>
+            <tr>
+                <td class="row_five"></td>
+                <td class="row_five"></td>
+                <td class="row_five"></td>
+                <td class="row_five"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="winner">
+        <p class="p_winner"></p>
+    </div>
+    <div class="start_new">
+        <button class="new_game">Start New Game</button>
+    </div>
+    <div class="input_buttons">
+        <div class="input_btns_row_one">
+            <button class="letter" id="q" >Q</button>
+            <button class="letter" id="w">W</button>
+            <button class="letter" id="e">E</button>
+            <button class="letter" id="r">R</button>
+            <button class="letter" id="t">T</button>
+            <button class="letter" id="y">Y</button>
+            <button class="letter" id="u">U</button>
+            <button class="letter" id="i">I</button>
+            <button class="letter" id="o">O</button>
+            <button class="letter" id="p">P</button>
+        </div>
+        <div class="input_btns_row_two">
+            <button class="letter" id="a">A</button>
+            <button class="letter" id="s">S</button>
+            <button class="letter" id="d">D</button>
+            <button class="letter" id="f">F</button>
+            <button class="letter" id="g">G</button>
+            <button class="letter" id="h">H</button>
+            <button class="letter" id="j">J</button>
+            <button class="letter" id="k">K</button>
+            <button class="letter" id="l">L</button>
+        </div>
+        <div class="input_btns_row_three">
+            <button class="enter">ENTER</button>
+            <button class="letter" id="z">Z</button>
+            <button class="letter" id="x">X</button>
+            <button class="letter" id="c">C</button>
+            <button class="letter" id="v">V</button>
+            <button class="letter" id="b">B</button>
+            <button class="letter" id="n">N</button>
+            <button class="letter" id="m">M</button>
+            <button class="backspace">←</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+</body>
+</html>
